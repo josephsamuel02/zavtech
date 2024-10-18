@@ -1,6 +1,6 @@
 const PUBLIC_URLS = {
   call: "",
-  whatsapp: "https://api.whatsapp.com/send?phone=2348033034301",
+  whatsapp: "https://api.whatsapp.com/send?phone=23408052594096",
   email: "",
   X_Social: " ",
   Facebook: " ",

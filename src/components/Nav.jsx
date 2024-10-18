@@ -14,26 +14,25 @@ const Nav = () => {
   const navigation = [
     { name: "Home", href: PUBLICROUTES.HOME },
     { name: "About Us", href: PUBLICROUTES.ABOUT_US },
-    { name: "Properties", href: PUBLICROUTES.PROPERTIES },
-    // { name: "Gallery", href: PUBLICROUTES.GALLERY },
+    // { name: "Properties", href: PUBLICROUTES.PROPERTIES },
     { name: "Contact Us", href: PUBLICROUTES.CONTACT_US },
   ];
   const [showNav, setShowNav] = useState(false);
 
   return (
     <nav className=" fixed w-full mx-0 z-10  top-0 bg-[#0000007a] backdrop-blur-lg flex flex-row items-center   shadow-md">
-      <a href={PUBLICROUTES.HOME} className="mx-2 md:mx-6 my-0  items-center">
+      <a href={PUBLICROUTES.HOME} className="mx-2 md:mx-6 my-2  items-center">
         <img
           alt="Company Logo"
-          className="h-16 md:h-20 w-auto ml-6 md:ml-10 md:w-auto object-cover py-2 "
+          className="h-12 md:h-20 w-auto ml-6 md:ml-10 md:w-auto object-cover py-2 "
           src="/image/logo.png"
         />
       </a>
 
-      <ul className="mx-8 ml-20 py-3 hidden  md:flex flex-row absolute right-0">
+      <ul className="mx-8 ml-20 py-3 hidden md:flex flex-row absolute right-0">
         {navigation.map((item, i) => (
           <a
-            className="mx-1 px-4 py-2 tex-center text-[#e2f7d1] font-RacingSans  hover:text-[#7cc736] text-lg  rounded-md"
+            className="mx-1 px-4 py-2 tex-center text-[#e2f7d1] font-RacingSans hover:text-[#7cc736] text-lg  rounded-md"
             href={`${item.href}`}
             key={i}
           >
@@ -62,10 +61,10 @@ const Nav = () => {
       </h1>
 
       {showNav && (
-        <ul className="mx-auto py-3  backdrop-blur-lg absolute top-20 right-0 left-0 flex flex-col bg-black font-bold rounded shadow-md ">
+        <ul className="mx-auto py-3 absolute top-16 right-0 left-0 flex flex-col  bg-[#000000c4] backdrop-blur-lg font-bold rounded shadow-md ">
           {navigation.map((item, i) => (
             <a
-              className="mx-auto px-3 py-2 tex-center text-black  text-md font-OleoScript rounded hover:bg-slate-100 transition-all  font-bold"
+              className="mx-auto px-3 py-2 tex-center text-[#edf7eb]  text-lg font-nunito rounded hover:bg-slate-100 transition-all   "
               href={`${item.href}`}
               key={i}
               onClick={() => setShowNav(false)}

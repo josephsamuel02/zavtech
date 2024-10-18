@@ -1,16 +1,19 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-
+import About from "./pages/About/index";
 import PUBLICROUTES from "./utils/PublicRoutes";
-
+import Contact from "./pages/Contact/Contact";
 const App = () => {
   return (
     <>
       <Routes>
         <Route path={PUBLICROUTES.HOME} element={<Home />} />
+        <Route path={PUBLICROUTES.ABOUT_US} element={<About />} />
+        <Route path={PUBLICROUTES.CONTACT_US} element={<Contact />} />
+
         {/* <Route path={PUBLICROUTES.PROPERTIES} element={<Products />} />
         <Route path={`${PUBLICROUTES.REQUEST_FORM}/:id`} element={<RequestForm />} />
-        <Route path={PUBLICROUTES.ABOUT_US} element={<About />} />
+       
         <Route path={PUBLICROUTES.CONTACT_US} element={<Contact />} />
         <Route path={PUBLICROUTES.GALLERY} element={<Gallery />} />
 

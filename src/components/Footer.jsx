@@ -1,5 +1,5 @@
 import PUBLICROUTES from "../utils/PublicRoutes";
-import PUBLIC_URLS from "../utils/public_urls";
+// import PUBLIC_URLS from "../utils/public_urls";
 const Footer = () => {
   const LINKS = [
     {
@@ -44,7 +44,7 @@ const Footer = () => {
                 <li key={n}>
                   <a
                     href={i.link}
-                    className="  font-robot text-base antialiased  leading-relaxed font-bold transition-colors text-blue-gray-900 hover:text-[#3d8d2d] "
+                    className=" mx-auto flex text-center  font-robot text-base antialiased  leading-relaxed font-bold transition-colors text-blue-gray-900 hover:text-[#3d8d2d] "
                   >
                     {i.title}
                   </a>
@@ -62,7 +62,7 @@ const Footer = () => {
               Developed by:
               <a href="https://theozonetechnology.com/">The Ozone Technology.</a>
             </h3>
-            <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+            {/* <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
               <a
                 href={PUBLIC_URLS.whatsapp}
                 target="_blank"
@@ -244,7 +244,7 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

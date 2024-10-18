@@ -1,17 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&family=Roboto&family=Racing+Sans+One&family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
 
+/* width*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(195, 250, 193);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #19b30b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3af043;
+  border-radius: 3px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
+/* .scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+/* .scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+} */
