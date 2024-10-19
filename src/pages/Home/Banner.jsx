@@ -4,7 +4,7 @@ const Banner = () => {
     <div className="w-full h-[600px] bg-white">
       <div className=" mx-0 w-full h-full  flex flex-col relative ">
         <video autoPlay muted loop id className="w-full h-full   object-cover ">
-          <source src="/video/Vid4.mp4" type="video/mp4" />
+          <source src="/video/Zavtech_vid.mp4" type="video/mp4" />
         </video>
 
         <div className=" mx-auto absolute top-10 md:top-16 left-1 w-full mt-24">

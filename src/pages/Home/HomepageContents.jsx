@@ -20,26 +20,25 @@ const HomepageContents = () => {
 
   const Services = [
     {
-      image: "/image/VSAT.jpg",
+      image: "/image/cable_dish.webp",
       title: "Cable Satellite Services",
       text: "We bring the world closer with our professional satellite installation services. Our solutions include: Residential and commercial satellite TV installation precise alignment and configuration for optimal signal strength Installation of satellite-based internet solutions for remote locations",
     },
     {
-      image: "/image/VSAT.jpg",
-      title: "CCTV Installation",
+      image: "/image/cctv.webp",
+      title: "CCTV Surveillance Installation",
       text: "Ensure the safety of your home or business with our high-quality, expertly installed CCTV systems. We offer: Customized surveillance setups for homes,  and commercial properties   with latest cameras with high-definition , night vision, and motion detection Remote monitoring solutions and more",
     },
     {
-      image: "/image/VSAT.jpg",
+      image: "/image/vsat.webp",
       title: "VSAT Installation",
       text: "Stay connected anywhere, anytime with our dependable VSAT (Very Small Aperture Terminal) installations: Internet access for businesses and remote sites Installation for enterprises requiring high-speed, low-latency communication Robust, weather-resistant networks for mission-critical operations",
     },
-
-    {
-      image: "/image/VSAT.jpg",
-      title: "Cable Satellite Services",
-      text: "Industry Standard Materials",
-    },
+    // {
+    //   image: "/image/VSAT.jpg",
+    //   title: "Cable Satellite Services",
+    //   text: "Industry Standard Materials",
+    // },
   ];
   // const settings = {
   //   dots: true,
@@ -113,7 +112,7 @@ const HomepageContents = () => {
           </div>
         </div>
       </div>
-      <div className=" relative w-full h-auto   ">
+      <div className=" relative w-full h-full md:h-[860px] lg:h-[830px]   ">
         <video
           ref={videoRef}
           autoPlay
@@ -137,10 +136,10 @@ const HomepageContents = () => {
           </p>
           {/* <Slider {...settings} className="my-20 w-full flex flex-row"> */}
           <div className="w-full h-auto flex flex-row items-center overflow-x-scroll">
-            <div className="w-auto h-[500px] flex  flex-row items-center">
+            <div className="w-auto lg:w-full h-[500px] flex flex-row items-center">
               {Services.map((i, n) => (
                 <div
-                  className="w-[300px] h-[450px] p-2.5 mx-1 bg-[#3031308e] rounded-lg shadow flex flex-col border border-[#ffffffa4] items-center"
+                  className="w-[300px] h-[450px] p-2.5 mx-6 md:mx-auto bg-[#3031308e] rounded-xl shadow flex flex-col border border-[#ffffffa4] items-center"
                   key={n}
                 >
                   <img
@@ -148,9 +147,11 @@ const HomepageContents = () => {
                     alt="image"
                     className="w-full h-[220px] object-cover rounded"
                   />
-                  <div className="w-full h-[130px] mb-4">
+                  <div className="w-full h-[130px]">
                     <h3 className="text-xl py-1  text-[#ffffff] font-bold">{i.title}</h3>
-                    <p className="text-md font-nunito  text-white leading-[20px]">{i.text}</p>
+                    <p className="text-[15px] font-nunito  text-white leading-[20px]">
+                      {i.text}
+                    </p>
                   </div>
                 </div>
               ))}
